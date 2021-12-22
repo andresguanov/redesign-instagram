@@ -2,7 +2,7 @@ import './Header.css'
 
 import { Profile } from "../Profile"
 
-export const Header = ({ username }) => {
+export const Header = () => {
     return (
         <header>
             <p><ion-icon name="create-outline"></ion-icon></p>

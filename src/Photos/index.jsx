@@ -10,21 +10,28 @@ const Photo = ({ url }) => {
 export const Photos = () => {
     const [photos, setPhotos] = useState([])
 
+
     useEffect(() => {
-        getUserMedia().then(data => {
-            setPhotos(data)
-        })
+        getUserMedia()
+            .then(data => {
+                if (typeof data !== 'undefined') {
+                    setPhotos(data)
+                }
+            })
+
     }, [])
+
 
     return (
         <div className='Photos'>
-            {
-                photos.map(({ id, media_url }) => (
+            {photos.length
+                ? photos.map(({ id, media_url }) => (
                     <Photo
                         key={id}
                         url={media_url}
                     />
                 ))
+                : ""
             }
         </div>
 

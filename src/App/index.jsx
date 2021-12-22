@@ -1,7 +1,7 @@
 import { Header } from '../Header'
+import { Posts } from '../Posts'
 import { Highlights } from '../Highlights'
 import { Photos } from '../Photos'
-import { Posts } from '../Posts'
 import './App.css'
 
 function App() {

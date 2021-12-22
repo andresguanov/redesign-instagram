@@ -15,15 +15,21 @@ const Post = ({ name, total }) => {
 export const Posts = () => {
     const [posts, setPosts] = useState(0)
     useEffect(() => {
-        getUserInfo().then(data => {
-            const { media_count } = data
-            setPosts(media_count)
-        })
+        getUserInfo()
+            .then(data => {
+
+                const { media_count } = data
+                if (typeof media_count !== 'undefined') {
+                    setPosts(media_count)
+
+                }
+            })
+
     })
 
     return (
         <div className="Posts neumorphism">
-            <Post name="Posts" total={posts} />
+            <Post name="Posts" total={posts ?? 0} />
             <Post name="Followers" total={6} />
             <Post name="Following" total={214} />
 

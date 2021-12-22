@@ -4,14 +4,20 @@ import { getUserInfo } from '../services'
 import './Profile.css'
 
 export const Profile = () => {
-    const profileURL = 'https://pps.whatsapp.net/v/t61.24694-24/s96x96/263464006_1415280628866445_2608709732658725096_n.jpg?ccb=11-4&oh=5f52cb8a2cc715f3d4907b6e07db4f07&oe=61C7D7FA'
+    const profileURL = ''
 
-    const [username, setUserName] = useState("")
+    const [username, setUserName] = useState("username")
     useEffect(() => {
-        getUserInfo().then(data => {
-            const { username } = data
-            setUserName(username)
-        })
+        getUserInfo()
+            .then(data => {
+                const { username } = data
+
+                if (typeof username !== 'undefined') {
+
+                    setUserName(username)
+                }
+            })
+
     }, [])
 
     return (
