@@ -1,0 +1,12 @@
+.Photos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 1rem 0;
+	gap: 0.2rem;
+}
+
+.Photo {
+	width: 90px;
+	height: 90px;
+	border-radius: 8px;
+}

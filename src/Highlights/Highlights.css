@@ -1,0 +1,22 @@
+.Highlights {
+	display: flex;
+	justify-content: space-around;
+}
+
+.Highlight .neumorphism {
+	display: grid;
+	place-content: center;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+
+.Highlight img {
+	width: 16px;
+	height: 16px;
+}
+
+.Highlight span {
+	font-size: var(--text-sm);
+	color: var(--dark-gray);
+}

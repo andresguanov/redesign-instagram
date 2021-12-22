@@ -1,0 +1,17 @@
+.Posts {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 1.3rem 0;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.Post {
+	font-size: var(--text-sm);
+}
+.Post div {
+	margin-top: 3px;
+}
+.Post .name {
+	color: var(--dark-gray);
+}

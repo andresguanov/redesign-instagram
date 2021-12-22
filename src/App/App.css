@@ -4,13 +4,4 @@
 	width: 300px;
 	height: auto;
 	text-align: center;
-	border: solid 1px #000;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-button {
-	font-size: calc(10px + 2vmin);
 }
