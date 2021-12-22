@@ -1,0 +1,30 @@
+.Profile {
+	width: 100%;
+	height: 100%;
+	align-self: end;
+	display: grid;
+	grid-template-rows: 80% auto;
+}
+
+.Profile .container {
+	display: grid;
+	place-content: center;
+}
+
+.Profile .neumorphism {
+	width: 100px;
+	height: 100px;
+}
+.Profile .gradient-effect {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: linear-gradient(to right, red, purple);
+}
+
+.Profile img {
+	width: 74px;
+	height: 74px;
+	border-radius: 50%;
+	border: 2px solid var(--gray);
+}

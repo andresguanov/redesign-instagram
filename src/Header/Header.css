@@ -1,0 +1,31 @@
+header {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 16px 50px 150px 50px 16px;
+	width: 100%;
+	height: 150px;
+}
+
+header .neumorphism {
+	position: relative;
+	align-self: end;
+	width: 35px;
+	height: 35px;
+}
+
+header .icon {
+	margin: 0;
+	height: 35px;
+	display: grid;
+	place-content: center;
+	color: var(--dark-gray);
+}
+
+.notification {
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #f00;
+	right: 0;
+}
